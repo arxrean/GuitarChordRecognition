@@ -3,7 +3,7 @@ The goal of this project is to recognize the chord based on the input image.
 
 ### Dataset
 
-Download the dataset from [here](https://drive.google.com/file/d/1D1ZNHSX_QuHGz_k0EEJ8sKJJBUy2eFR9/view?usp=sharing) and put it under the root project folder.
+Download the dataset from [here](https://drive.google.com/file/d/1yFsEPjK2KFCsKAWrG0-TMpdsKA-cnqMI/view?usp=sharing) and put it under the root project folder.
 
 Create a `save` folder under the root project folder.
 
