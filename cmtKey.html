@@ -1,0 +1,27 @@
+<!-- You must include this JavaScript file -->
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+
+<!-- For the full list of available Crowd HTML Elements and their input/output documentation,
+      please refer to https://docs.aws.amazon.com/sagemaker/latest/dg/sms-ui-template-reference.html -->
+
+<!-- You must include crowd-form so that your task submits answers to MTurk -->
+<crowd-form answer-format="flatten-objects">
+    <crowd-keypoint 
+        src="${s3}"
+        labels="['Finger']"
+        header="Please point the finger nail tips for index, middle, ring and pinky finger. (Don't zoom the image!)"
+        name="annotatedResult">
+
+        <short-instructions>
+            <p>Please point the finger nail tips for index, middle, ring and pinky finger. No need to consider thumb.</p>
+            <p>Please make sure there are only 4 points for submission. Even if some tips are not visiable, you should point the estimated position.</p>
+            <p style="color:red">Please don't zoom the image. Keep it in orginal size. Any zoom of image will be detected and denied finally.</p>
+            <p>Please point the exact position corresponding to the nail tip. Any point that is not on the finger will be denied.</p>
+            <p>The below is a correct example</p>
+            <img src="https://res.cloudinary.com/dhortnuos/image/upload/v1604302488/example_kofikx.png", width="200" height="300">
+            <p>The below is a wrong example</p>
+            <img src="https://res.cloudinary.com/dhortnuos/image/upload/v1604645827/0_visual_lpypu7.jpg", width="200" height="300">
+        </short-instructions>
+
+    </crowd-keypoint>
+</crowd-form>

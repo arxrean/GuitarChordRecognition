@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#$ -M zkou@nd.edu   # Email address for job notification
+#$ -m abe            # Send mail when job begins, ends and aborts
+#$ -pe smp 1     # Specify parallel environment and legal core size
+#$ -q gpu@@wanglab           # Specify queue
+#$ -N job_name       # Specify job name
+#$ -l gpu=1
+
+# python train.py --num_workers 0 --batch_size 32 --gpu
+# python test.py --gpu --num_workers 0
+python train_point.py --num_workers 0 --name point --dataset chord_point --middle point --decode point --batch_size 32 --gpu
+
