@@ -97,5 +97,5 @@ Firstly, I think the main reason of the poor performance of the model is the add
 
 Second, the regression finger position loss seems to block the optimization of softmax loss (Finger Below). One possible reason is the current data size is not enough to optimize both bosses together. Therefore, if the model focuses more on the regresson loss, the classification accuracy drops a lot.
 
-<img src="/Users/ziyikou/Desktop/Picture1.png" alt="Picture1" style="zoom:48%;" />
+<img src="./repo/Picture1.png" alt="Picture1" style="zoom:48%;" />
 
