@@ -154,8 +154,8 @@ def upload_img_s3():
     import boto3
 
     REGION = 'us-east-2'
-    ACCESS_KEY_ID = 'AKIAIW2SBGFPMA455VNA'
-    SECRET_ACCESS_KEY = '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'
+    ACCESS_KEY_ID = 'XXX'
+    SECRET_ACCESS_KEY = 'XXX'
 
     BUCKET_NAME = 'guitarchord2'
 
@@ -177,8 +177,8 @@ def gen_s3_url(outpath='./repo/s3_urls.csv', DATA_ROOT='./dataset/new', addon=Fa
     import boto3
 
     REGION = 'us-east-2'
-    ACCESS_KEY_ID = 'AKIAIW2SBGFPMA455VNA'
-    SECRET_ACCESS_KEY = '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'
+    ACCESS_KEY_ID = 'XXX'
+    SECRET_ACCESS_KEY = 'XXX'
 
     BUCKET_NAME = 'guitarchord2'
 
